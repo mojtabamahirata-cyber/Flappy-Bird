@@ -1,0 +1,34 @@
+* {
+    font-family: helvetica, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+html, body {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* يمنع أي سكرول يطلع مناطق سودة حوالين اللعبة */
+}
+
+/* عنوان "فلابي بيرد" انحذف من index.html بالكامل (اللعبة الحين تاخذ
+   الشاشة كلها من فوق، ماكو داعي لعنوان فوقها). */
+
+.game-screen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+    canvas {
+        background-color: black;
+        display: block;
+        width: 100vw;   /* تاخذ عرض الشاشة كامل */
+        height: 100vh;  /* تاخذ طول الشاشة كامل — ماكو مناطق سودة حوالين اللعبة */
+        margin: 0;
+        border-radius: 0;
+    }
+    .game-description {
+        display: none; /* ماكو داعي لها الحين واللعبة صارت ملء الشاشة */
+    }
